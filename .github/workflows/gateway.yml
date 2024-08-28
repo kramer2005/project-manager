@@ -1,0 +1,28 @@
+name: Build and Deploy Gateway
+
+on:
+  push:
+    paths:
+      - 'packages/service-gateway/**'
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Echo
+        run: echo "Building Gateway"
+  
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Echo
+        run: echo "Deploying Gateway"
