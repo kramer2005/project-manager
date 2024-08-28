@@ -7,14 +7,24 @@
   "license": "ISC",
   "main": "index.js",
   "exports": {
-    "./prettier": "./prettier/.prettierrc.cjs"
+    "./prettier": "./prettier/.prettierrc.cjs",
+    "./graphql": "./dist/index.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.1",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.9.0",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0",
+    "graphql-scalars": "^1.23.0",
+    "reflect-metadata": "^0.2.2",
+    "type-graphql": "^2.0.0-rc.2",
+    "typescript": "^5.5.4"
   }
 }

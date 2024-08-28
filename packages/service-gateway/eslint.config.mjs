@@ -9,4 +9,5 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   eslintPluginPrettierRecommended,
+  { rules: { '@typescript-eslint/no-unused-vars': 'off' } },
 ]

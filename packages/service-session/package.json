@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
     "@types/node": "^22.5.1",
@@ -11,10 +14,13 @@
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.3.0"
   },
   "dependencies": {
-    "@project-manager/shared": "*"
+    "@project-manager/shared": "*",
+    "comm": "*",
+    "ioredis": "^5.4.1"
   }
 }

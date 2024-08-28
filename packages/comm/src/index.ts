@@ -29,8 +29,13 @@ class Comm {
   constructor(config: CommConfig) {
     this.publisher = new Redis(config.url)
     this.subscriber = new Redis(config.url)
+
     if (config.responseTopic) {
       this.responseChannel = config.responseTopic
+    }
+
+    if (config.timeout) {
+      this.timeout = config.timeout
     }
 
     this.subscriber.on('error', (error) => {
