@@ -1,0 +1,11 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@project-manager/shared": "*",
+    "@types/node": "^22.5.1",
+    "typescript": "^5.5.4"
+  }
+}

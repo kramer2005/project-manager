@@ -1,0 +1,20 @@
+{
+  "name": "@project-manager/shared",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Wagner Kramer <wagner.vieira@analitica.ag>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "exports": {
+    "./prettier": "./prettier/.prettierrc.cjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3"
+  }
+}
